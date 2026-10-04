@@ -1,0 +1,2 @@
+# Use public/ as the document root. Never expose the repository root in Apache.
+Require all denied

@@ -1,0 +1,23 @@
+# Installed dependencies
+node_modules/
+storage/
+
+# Local credentials and database backups
+.env
+.env.*
+!.env.example
+backups/
+*.log
+
+# Earlier root-level prototypes and local reference screenshots.
+# The working website is public/.
+/*.html
+/app.js
+/appData.js
+/*.png
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

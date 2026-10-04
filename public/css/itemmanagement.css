@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #eef2f6;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 15px;
+}
+
+
+/* Sidebar Styling */
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-right: 1px solid #e0e6ed;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 30px;
+}
+
+.logo i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #555;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link i {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.nav-link.active {
+    background-color: #e6f2ff;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: #f0f4f8;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e6ed;
+}
+
+.user-icon {
+    font-size: 30px;
+    color: #888;
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.user-email {
+    font-size: 12px;
+    color: #888;
+}
+
+.logout {
+    margin-top: 20px;
+    color: #dc3545;
+}
+
+
+/* Main Content Styling */
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.topbar-right i {
+    font-size: 22px;
+    color: #777;
+}
+
+.control-panel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.search-and-filters {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.search-box {
+    position: relative;
+    flex-grow: 1;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.filter-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    color: #555;
+}
+
+
+/* Table Styling */
+
+.item-list-table {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f0f4f8;
+    color: #555;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fbfd;
+}
+
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #eef2f6;
+    color: #555;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.status.lost {
+    background-color: #ff5c5c;
+}
+
+.status.found {
+    background-color: #4CAF50;
+}
+
+.status.resolved {
+    background-color: #007bff;
+}
+
+.action-btn {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.action-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.pagination span {
+    font-size: 14px;
+    color: #777;
+}
+
+.page-btn {
+    background-color: #f0f4f8;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #555;
+}
+
+.page-btn:hover {
+    background-color: #e6eaf0;
+}

@@ -1,0 +1,213 @@
+/* Global Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #eef2f6;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 15px;
+}
+
+
+/* Sidebar Styling */
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #e0e6ed;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #555;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+    background-color: #e6f2ff;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+
+/* Admin Info */
+
+.admin-info {
+    font-size: 13px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #e0e6ed;
+}
+
+#logout {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* Main Content */
+
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+
+/* Controls Section */
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.controls input {
+    padding: 10px;
+    width: 40%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+
+/* Table Styling */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+thead th {
+    background-color: #f0f4f8;
+    color: #555;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fbfd;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eef2f6;
+    color: #555;
+}
+
+
+/* Status Badges */
+
+.status {
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+}
+
+.status.active {
+    background-color: #4CAF50;
+}
+
+.status.pending {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.status.resolved {
+    background-color: #007bff;
+}
+
+
+/* Buttons */
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 8px;
+    transition: color 0.2s ease;
+}
+
+.edit {
+    color: #007bff;
+}
+
+.resolve {
+    color: #4caf50;
+}
+
+.remove {
+    color: #f44336;
+}
+
+.view {
+    color: #2196f3;
+}
+
+button:hover {
+    text-decoration: underline;
+}
